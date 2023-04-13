@@ -668,4 +668,9 @@ form .whatsapp #send-wp{
         width: 250px;
         align-self: center;
     }
+    .sections .home {
+        background-image: url('../images/bg-m.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

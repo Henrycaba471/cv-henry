@@ -76,6 +76,17 @@ sendWp.addEventListener('click', (e) => {
 });
 
 
+const navMenu = document.querySelectorAll('.nav-menu');
+const menuToggle = document.querySelector('.nav-mobile');
+console.log(navMenu);
+
+navMenu.forEach(e => {
+    e.addEventListener('click', e => {
+        menuToggle.classList.toggle("change");
+        document.querySelector(".nav").classList.toggle("navBar");
+    });
+});
+
 /*
 3203186875 2000
 3144778983 2000
