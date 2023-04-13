@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=DynaPuff&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.3s;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #17c3b2;
+}
+
+/*Editando el headedr*/
+.header {
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: #17c3b2;
+    z-index: 10;
+}
+.header a{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Allura', cursive;
+}
+.header .logo img {
+    height: 40px;
+}
+
+.header .nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.navBar{
+    display: none;
+}
+.header .nav ul li {
+    list-style: none;
+    margin: 0 5px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    transition: all 0.5s ease-out;
+    text-transform: uppercase;
+}
+
+.header .nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 7px;
+    border-radius: 5px;
+    transition: all 0.5s ease-out;
+    font-family: 'Allura', cursive;
+    box-sizing: border-box;
+    font-weight: 900
+}
+
+.header .nav ul li a:hover {
+    cursor: pointer;
+    color: #80bca3;
+    background-color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/*Editando el home*/
+.sections {
+    margin-top: 10vh;
+}
+
+.sections .home {
+    background-image: url('../images/bg-home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sections .home h3 mark {
+    padding: 7px;
+    border-radius: 10px;
+    color: #489c79;
+}
+
+
+
+
+.sections .home .profile-cv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 82vh;
+    background-color: #80bca359;
+}
+
+.sections .home img {
+    height: 300px;
+    border-radius: 80px 10px;
+}
+
+.sections .home .profile-cv input {
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #80bca3;
+    color: #fff;
+    border-radius: 7px;
+    border: 2px solid #fff;
+    margin-top: 50px;
+    transition: all 0.5s ease-out;
+}
+
+.sections .home .profile-cv input:hover {
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #80bca3;
+    background-color: #fcfcfcb6;
+    border-radius: 7px;
+    border: 2px solid #80bca3;
+    margin-top: 50px;
+    box-shadow: 5px 5px 7px#ffffff;
+    transform: scale(.9);
+}
+
+.sections .home .redes {
+    background-color: #80bca359;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sections .home .redes img {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    border-radius: 0;
+}
+
+/*Sectio about me*/
+
+.acerca-de-mi {
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 85vh;
+    /*background-image: url('../images/bg-about-me.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2eabc;
+    padding: 10px 0;
+}
+
+.acerca-de-mi .about-me {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+.acerca-de-mi .about-me div {
+    border: 2px solid #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #17c3b2;
+    color: #f2eabc;
+    max-width: 650px;
+    text-align: center;
+}
+
+.acerca-de-mi .about-me div h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+/*Editar Skills*/
+
+.skills {
+    color: #2C68FE;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 85vh;
+    /* background-image: url('../images/skills.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.skills .skills-contrast {
+    padding: 15px;
+    text-align: center;
+    background-color: #f2eabc6e;
+    border-radius: 20px;
+}
+
+.skills .content-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .content-skills div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+.title-skills h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 33px;
+}
+
+.title-skills p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.skills .content-skills img {
+    height: 100px;
+    border-radius: 20px;
+}
+
+.skills .content-skills div:hover {
+    cursor: pointer;
+    background-color: #80bca3;
+    border: 2px solid #fff;
+    box-shadow: 10px 7px 7px#f2eabc;
+}
+
+.skills .content-skills div:hover img {
+    transform: scale(.8);
+}
+
+/*Editanto experiencia*/
+
+.experience {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffff00;
+    color: #489c79;
+    flex-wrap: wrap;
+}
+
+.experience div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.experience .study-u {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px 0;
+    border-bottom: 2px solid #489c79;
+}
+
+.experience .experience-lab {
+    border: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.experience h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+
+.experience h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.experience p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: #566458;
+}
+
+.experience img {
+    width: 80px;
+}
+
+/*Projectos*/
+
+.projects {
+    color: #17c3b2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 85vh;
+    /* background-image: url('../images/skills.jpg');*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f2eabc;
+}
+
+.projects .projects-contrast {
+    text-align: center;
+    background-color: #f2eabc6e;
+    border-radius: 20px;
+    max-width: 90%;
+}
+
+.projects .content-projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects .content-projects div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+    border-radius: 10px;
+    border: 2px solid #489c79;
+    padding: 10px 0;
+}
+
+.projects .content-projects div h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.projects .content-projects div a {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: #489c79
+}
+
+.projects .content-projects div button {
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #80bca3;
+    color: #fff;
+    border-radius: 7px;
+    border: 2px solid #fff;
+    margin-top: 50px;
+    transition: all 0.5s ease-out;
+}
+
+.projects .content-projects div button:hover {
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #80bca3;
+    background-color: #fcfcfcb6;
+    border-radius: 7px;
+    border: 2px solid #80bca3;
+    margin-top: 50px;
+    box-shadow: 5px 5px 7px#ffffff;
+    transform: scale(.9);
+}
+
+.title-projects h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 33px;
+}
+h2{
+    text-transform: uppercase;
+    padding: 20px 0;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.projects .content-projects img {
+    height: 200px;
+    width: 200;
+    border-radius: 20px;
+    z-index: 1;
+}
+.navBar{
+    display: block;
+}
+.projects .content-projects div:hover {
+    cursor: pointer;
+    background-color: #80bca32a;
+    border: 2px solid #fff;
+    box-shadow: 10px 7px 7px #17c3b28e;
+}
+
+.projects .content-projects div:hover img {
+    transform: scale(.8);
+}
+.contact{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 85vh;
+    font-family: 'DynaPuff', cursive;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact .option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.contact .option select{
+    font-size: 25px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px;
+}
+.contact .option select option{
+    background: #17c3b2;
+}
+.form .option img{
+    width: 40px;
+}
+.img-contact{
+    text-align: center;
+}
+.img-contact img{
+    width: 100px;
+}
+.contact h2{
+    font-size: 40px;
+    text-decoration: none;
+}
+form .correo{
+    display:  flex;
+    flex-direction: column;
+    padding: 15px 0;
+    display: none;
+}
+form .correo input, textarea{
+    margin: 5px 0;
+    outline: none;
+    padding: 3px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    background: transparent;
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form .correo #name{
+    width: 180px;
+}
+form .correo #email{
+    width: 350px;
+}
+form textarea{
+    resize: none;
+    width: 530px;
+}
+form .correo #send-mail{
+    width: 100px;
+    align-self: center;
+}
+form .whatsapp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+form .whatsapp #send-wp{
+    margin: 5px 0;
+    outline: none;
+    padding: 3px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    background: transparent;
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100px;
+}
+#send-wp:hover,
+#send-mail:hover{
+    box-shadow: 5px 5px 7px#ffffff;
+    cursor: pointer;
+    background-color: #fff;
+    color: #17c3b2;
+    border: 2px solid #17c3b2;
+    transform: scale(.95);
+}
+
+
+
+
+
+
+
+/*Responsive*/
+@media screen and (max-width: 1000px) {
+    .sections .home .profile-cv {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        color: #fff;
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        min-height: 82vh;
+        background-color: #80bca359;
+    }
+    .sections .home img {
+        height: 300px;
+        border-radius: 50%;
+    }
+}
+@media screen and (max-width: 570px) {
+    .header{
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        padding: 5px;
+    }
+    .nav-mobile{
+        padding: 5px;
+    }
+    .nav {
+        display: none;
+    }
+    .navBar{
+        background-image: url('../images/bg-about-me.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: block;
+    }
+    .navBar ul{
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #80bca370;
+    }
+    .header .navBar ul li a{
+        font-size: 30px;
+    }
+    .header .navBar ul li a:hover {
+        cursor: pointer;
+        color: #80bca3;
+        background-color: #fff;
+        font-size: 55px;
+    }
+    .sections .home h3 mark {
+        padding: 7px;
+        border-radius: 7px;
+        color: #489c79;
+        font-size: 30px;
+    }
+    .sections .home img {
+        height: 250px;
+        border-radius: 50%;
+    }
+    .name-cv .dev{
+        font-size: 50px;
+    }
+    .container {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 4px;
+        background-color: #ffffff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 10px) rotate(-45deg);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        transform: translate(0, -10px) rotate(45deg);
+    }
+
+    form textarea{
+        resize: none;
+        width: 250px;
+        align-self: center;
+    }
+    form .correo #name{
+        width: 250px;
+    }
+    form .correo{
+        width: 250px;
+        align-items: center;
+    }
+    form .correo #email{
+        width: 250px;
+        align-self: center;
+    }
+    form .correo #subject{
+        width: 250px;
+        align-self: center;
+    }
+}
