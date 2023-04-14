@@ -75,7 +75,6 @@ sendWp.addEventListener('click', (e) => {
     window.open(url);
 });
 
-
 const navMenu = document.querySelectorAll('.nav-menu');
 const menuToggle = document.querySelector('.nav-mobile');
 
