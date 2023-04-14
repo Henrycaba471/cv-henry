@@ -573,7 +573,7 @@ form .whatsapp #send-wp{
 @media screen and (max-width: 570px) {
     .header{
         margin: 0;
-        padding: 0;
+        padding: 0 7px;
     }
     .logo{
         padding: 5px;
