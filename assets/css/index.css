@@ -118,8 +118,8 @@ body {
     height: 300px;
     border-radius: 80px 10px;
 }
-.profile-cv .name-cv {
-    padding: 0 10px;
+.sections .home .profile-cv .name-cv{
+    padding: 0 15px;
 }
 .sections .home .profile-cv input {
     padding: 10px 20px;
@@ -610,8 +610,8 @@ form .whatsapp #send-wp{
         background-color: #fff;
         font-size: 55px;
     }
-    .sections .home{
-        padding: 0 10px;
+    .sections .home .profile-cv .name-cv{
+        padding: 0 15px;
     }
     .sections .home h3 mark {
         padding: 7px;
