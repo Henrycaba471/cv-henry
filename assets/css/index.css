@@ -610,6 +610,9 @@ form .whatsapp #send-wp{
         background-color: #fff;
         font-size: 55px;
     }
+    .sections .home{
+        padding: 0 10px;
+    }
     .sections .home h3 mark {
         padding: 7px;
         border-radius: 7px;
