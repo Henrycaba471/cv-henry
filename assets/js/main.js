@@ -78,7 +78,6 @@ sendWp.addEventListener('click', (e) => {
 
 const navMenu = document.querySelectorAll('.nav-menu');
 const menuToggle = document.querySelector('.nav-mobile');
-console.log(navMenu);
 
 navMenu.forEach(e => {
     e.addEventListener('click', e => {
