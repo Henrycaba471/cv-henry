@@ -37,7 +37,7 @@ body {
     font-size: 30px;
     text-decoration: none;
     color: #fff;
-    font-family: 'Allura', cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
 }
 .header .logo img {
     height: 40px;
@@ -78,7 +78,7 @@ body {
     cursor: pointer;
     color: #80bca3;
     background-color: #fff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Allura', cursive;
     box-sizing: border-box;
 }
 
